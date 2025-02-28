@@ -1,0 +1,30 @@
+[project]
+name = "simplecrud"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "MaximGit1", email = "allq137x@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "mypy>=1.15.0",
+    "pre-commit>=4.1.0",
+    "pytest>=8.3.4",
+    "pytest-cov>=6.0.0",
+    "ruff>=0.9.8",
+]
+
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+# Configs
+[tool.ruff]
+[tool.mypy]
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --color=yes --cache-clear --cov=src --cov-report=term-missing"
+
+[tool.setuptools.package-data]
+"*" = ["py.typed"]
