@@ -1,0 +1,18 @@
+src = ["src", "tests"]
+target-version = "py310"
+line-length = 79
+fix = true
+
+[lint]
+select = ["ALL"]
+ignore = [
+    "D",  # ignore pydocstyle
+    "ANN101",  # self type ignore
+    "S101",  # assert ignore
+    "PGH003",  # code error ignore
+    "E721",  # isinstance ignore,
+    "PT012",  # pytest.raises
+    ]
+
+[format]
+docstring-code-format = true
