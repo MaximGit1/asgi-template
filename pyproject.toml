@@ -1,7 +1,7 @@
 [project]
 name = "simplecrud"
 version = "0.1.0"
-description = "Add your description here"
+description = "ASGI template"
 authors = [
     { name = "MaximGit1", email = "allq137x@gmail.com" }
 ]
@@ -24,7 +24,14 @@ build-backend = "setuptools.build_meta"
 [tool.mypy]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-addopts = "-v --color=yes --cache-clear --cov=src --cov-report=term-missing"
+addopts = """
+  -v
+  --color=yes
+  --cache-clear
+  --cov=src
+  --cov-report=term-missing
+  --cov-config=config/.coveragerc
+"""
 
 [tool.setuptools.package-data]
 "*" = ["py.typed"]
