@@ -1,3 +1,3 @@
-from .uow import UoWProtocol
+from .transaction_manager import TransactionManager
 
-__all__ = ("UoWProtocol",)
+__all__ = ("TransactionManager",)

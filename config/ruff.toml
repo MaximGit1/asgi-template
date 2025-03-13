@@ -6,12 +6,12 @@ fix = true
 [lint]
 select = ["ALL"]
 ignore = [
-    "D",  # ignore pydocstyle
-    "S101",  # assert ignore
-    "PGH003",  # code error ignore
-    "E721",  # isinstance ignore,
+    "D",  # pydocstyle
+    "S101",  # assert
+    "PGH003",  # code error
+    "E721",  # isinstance
     "PT012",  # pytest.raises
-    "ANN001",  # first parameters of the method ignore (for example: self)
+    "ANN101",  # self annotation
 ]
 
 [format]
