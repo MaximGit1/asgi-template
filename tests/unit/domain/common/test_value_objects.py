@@ -23,11 +23,8 @@ class ValidVO(ValueObject[ValueT]):
     "value",
     ["test", "", 0, 1, [], [1], (1,), {1, 2}, True, False],
 )
-def test_invalid_vo(value: ValueT) -> None:
-    with pytest.raises(NotImplementedError) as exp:
-        InvalidVO(value)
-
-    assert str(exp.value) == "Method 'validate' is not implemented"
+def test_empty_validation_vo(value: ValueT) -> None:
+    assert InvalidVO(value)
 
 
 @pytest.mark.parametrize(

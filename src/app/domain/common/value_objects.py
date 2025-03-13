@@ -16,8 +16,6 @@ class ValueObject(Generic[ValueT]):
         Must be implemented by subclasses.
         Raises a :class:`DomainValidationError` if the value is invalid.
         """
-        msg = "Method 'validate' is not implemented"
-        raise NotImplementedError(msg)
 
     def __repr__(self) -> str:
         return f"{self.__class__.__name__}({self.value!r})"
