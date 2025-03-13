@@ -1,7 +1,6 @@
 [run]
 omit =
     src/app/application/common/protocols/*.py
-    src/app/application/common/protocols/__init__.py
 
 [report]
 exclude_lines =
