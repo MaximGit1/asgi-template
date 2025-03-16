@@ -6,7 +6,7 @@ from app.domain.link.value_objects import FullPath, LinkID, ShortPath
 
 
 @dataclass(slots=True, kw_only=True)
-class LinkEntity(BaseEntity[LinkID]):
+class Link(BaseEntity[LinkID]):
     full_path: FullPath
     short_path: ShortPath
     expiration: LinkExpiration
