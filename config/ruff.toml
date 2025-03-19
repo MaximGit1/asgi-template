@@ -12,7 +12,11 @@ ignore = [
     "E721",  # isinstance
     "PT012",  # pytest.raises
     "ANN101",  # self annotation
+    "E501",     # line too long
 ]
 
 [format]
 docstring-code-format = true
+line-ending = "lf"
+quote-style = "double"
+indent-style = "space"
